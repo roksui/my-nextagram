@@ -10,12 +10,14 @@ export const metadata = {
 export default function RootLayout(props: {
   children: React.ReactNode;
   modal: React.ReactNode;
+  submodal: React.ReactNode;
 }) {
   return (
     <html>
       <body>
         {props.children}
         {props.modal}
+        {props.submodal}
         <div id="modal-root" />
       </body>
     </html>

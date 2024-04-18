@@ -26,7 +26,7 @@ export function Modal({
     router.back();
   }
 
-  function handleAdd() {
+  async function handleAdd() {
     startTransition(async () => {
       await addComment();
     });

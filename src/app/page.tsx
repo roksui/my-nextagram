@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import Posts from './posts';
 
-export default function Page() {
+export default async function Page() {
   let photos = Array.from({ length: 6 }, (_, i) => i + 1);
 
   return (
@@ -10,6 +11,7 @@ export default function Page() {
           {id}
         </Link>
       ))}
+      <Posts />
     </section>
   );
 }
