@@ -6,6 +6,9 @@ export default async function Page() {
 
   return (
     <section className="cards-container">
+      <div>
+        <Link href="/notifications">View my notifications</Link>
+      </div>
       {photos.map((id) => (
         <Link className="card" key={id} href={`/photos/${id}`} passHref>
           {id}
